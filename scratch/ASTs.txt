@@ -1,0 +1,24 @@
+Graphical button
+
+(>>> 
+  (>>> 
+    (>>> 
+      (copy)
+      (par 
+        (filter isMouseDown)
+        (filter isMouseUp)))
+    (par (lift buttonDownImg) (par (lift buttonUpImg))))
+  rswitch)
+
+String synthesis (with external noise input)
+
+(loop
+  (>>>
+    (>>>
+      (>>>
+        (second (delay))
+        (combine +))
+      (+filter))
+    (copy)))
+
+
